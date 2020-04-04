@@ -1,0 +1,78 @@
+[v-cloak]{
+    display: none;
+}
+.even {
+    background: rgb(245, 221, 0);
+}
+.odd {
+    background: rgb(243, 126, 80);
+}
+h1 {
+    font-family: 'Nosifer', cursive;
+    padding: 20px;
+    font-size: 300%;
+    color: red;
+    background: black;
+    text-align: center;
+}
+html {
+    background: rgb(245, 221, 0);
+}
+table {
+    
+    background: black;
+    border: solid 1px black;
+    padding: 20px 20px;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom: 20px;
+    
+}
+th {
+    font-family: 'Chivo', sans-serif;
+    padding: 10px 10px;
+    color: white;
+    font-size: auto;
+    max-width: auto;
+    text-align: center;
+    flex-grow: 1;
+}
+td {
+    
+    font-family: 'Chivo', sans-serif;
+    padding: 10px 10px;
+    font-size: 80%;
+    text-align: center;
+    max-width: auto;
+    flex-grow: 2;
+}
+.new-sauce-form{
+    max-width: 700px;
+    margin-left:auto; 
+    margin-right:auto;
+
+}
+.new-sauce-form fieldset {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Chivo', sans-serif;
+    font-size: 80%;
+}
+/* .new-sauce-form div {
+    margin: 10px 0;
+    width: 80px;
+} */
+.new-sauce-form div label {
+    max-width: 110px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 80%;
+
+}
+.new-sauce-form div input {
+    margin: 5px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 80%;
+
+}
