@@ -1,3 +1,16 @@
+Vue.component ('sauce-data', {
+  template: `<div class="sauce-container" v-cloak>
+          <ul>
+              <li>{{name}}</li>
+              <li>{{variation}}</li>
+              <li>{{heat}}</li>
+              <li>{{bottle}}</li>
+              <li>{{manufacturer}}</li>
+              <li>{{location}}</li>
+            </ul>
+  </div>`, 
+  props: ['name', 'variation', 'heat', 'bottle', 'manufacturer', 'location']
+})
 var mySaucesArray = [
   {
     name: "Tapatio",
@@ -72,10 +85,5 @@ var vm = new Vue({
         location: ""
       };
     },
-    deleteItem: item => {
-      vm.sauceList = vm.sauceList.filter(sauces => {
-        return sauces !== item;
-      })
-    }
   }
 });

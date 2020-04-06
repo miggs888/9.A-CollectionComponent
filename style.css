@@ -18,18 +18,7 @@ h1 {
 html {
     background: rgb(245, 221, 0);
 }
-table {
-    
-    background: black;
-    border: solid 1px black;
-    padding: 20px 20px;
-    text-align: center;
-    margin-left:auto; 
-    margin-right:auto;
-    margin-bottom: 20px;
-    
-}
-th {
+ul {
     font-family: 'Chivo', sans-serif;
     padding: 10px 10px;
     color: white;
@@ -37,37 +26,45 @@ th {
     max-width: auto;
     text-align: center;
     flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
-td {
+.listHeader {
+    background: black;
+    font-size: 120%;
+    flex-grow: 1;
+}
+li {
     
     font-family: 'Chivo', sans-serif;
     padding: 10px 10px;
     font-size: 80%;
     text-align: center;
-    max-width: auto;
-    flex-grow: 2;
+    flex-grow: 1;
+    max-width: 16.6%;
 }
 .new-sauce-form{
-    max-width: 700px;
-    margin-left:auto; 
-    margin-right:auto;
+    padding: 20px 20px;
+    text-align: center;
+    margin-left: 25%; 
+    margin-right: 25%;
+    margin-bottom: 20px;
 
 }
 .new-sauce-form fieldset {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-family: 'Chivo', sans-serif;
-    font-size: 80%;
+    font-size: 90%;
+    
 }
-/* .new-sauce-form div {
-    margin: 10px 0;
-    width: 80px;
-} */
 .new-sauce-form div label {
     max-width: 110px;
     font-family: 'Chivo', sans-serif;
     font-size: 80%;
+    display: flex;
 
 }
 .new-sauce-form div input {

@@ -5,36 +5,33 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Chivo|Nosifer&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-    <title>7.A-Collection Array</title>
+    <title>9.A- Hot Sauce Component</title>
   </head>
 
   <body>
       <h1>Necessary Hot Sauces Collection</h1>
       <div id="app"> 
-        <table>
-          <thead>
-            <th>Name</th>
-            <th>Variation</th>
-            <th>Heat Rating</th>
-            <th>Bottle Size</th>
-            <th>Company Location</th>
-            <th>Manufacturer</th>
-          </thead>
-          <tbody>
-            <tr 
-              v-for="(sauces, index) in sauceList" 
-              v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0
-            }">
-                <td>{{sauces.name}}</td>
-                <td>{{sauces.variation}}</td>
-                <td>{{sauces.heat}}</td>
-                <td>{{sauces.bottle}}</td>
-                <td>{{sauces.location}}</td>
-                <td>{{sauces.manufacturer}}</td>
-                <td><button type="button" v-on:click="deleteItem(sauces)">Delete</button></td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="listHeader">
+          <li>Name</li>
+          <li>Variation</li>
+          <li>Heat</li>
+          <li>Bottle</li>
+          <li>Manufacturer</li>
+          <li>Location</li>
+        </ul>
+        <div v-cloak v-for="sauce in sauceList">
+          <sauce-data v-bind:class="{even: (index + 1) % 2 === 0, odd: (index + 1) % 2 !==0
+          }"
+            v-bind:name="sauce.name"
+            v-bind:variation="sauce.variation"
+            v-bind:heat="sauce.heat"
+            v-bind:bottle="sauce.bottle"
+            v-bind:manufacturer="sauce.manufacturer"
+            v-bind:location="sauce.location"
+            >
+          </sauce-data>
+        </div>
+
         <form class="new-sauce-form" v-on:submit.prevent="submitHandler">
           <fieldset>
             <legend>
