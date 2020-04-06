@@ -50,21 +50,22 @@ li {
     margin-left: 25%; 
     margin-right: 25%;
     margin-bottom: 20px;
-
-}
-.new-sauce-form fieldset {
     display: flex;
     flex-direction: column;
+    
+}
+.new-sauce-form fieldset {
+    
     align-items: center;
     font-family: 'Chivo', sans-serif;
-    font-size: 90%;
+    flex-grow: 1;
+
     
 }
 .new-sauce-form div label {
     max-width: 110px;
     font-family: 'Chivo', sans-serif;
     font-size: 80%;
-    display: flex;
 
 }
 .new-sauce-form div input {
